@@ -15,6 +15,9 @@ $(document).ready(function() {
         responsiveVoice.speak(txt, "Indonesian Male");
     });
 });
+if(!('webkitSpeechRecognition' in window)){
+    alert("Maaf, peramban anda tidak mendukung fitur speech-to-text pada aplikasi ini");
+}
 var recognition;
 function rekam(){
 recognition = new webkitSpeechRecognition();
