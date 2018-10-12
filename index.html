@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Informatics SmartBot</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="loader.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="card" style="width: 350px; background-image: url('1.jpg'); color: white; margin: 0 auto">
+			<img class="card-img-top" src="Capture.PNG" alt="Card Image" style="width: 100%; height: 276px">
+			<div class="card-body">
+				<h4 class="card-title text-center"><b>UII SmartBot</b></h4>
+				<p class="card-text">Silahkan mengajukan pertanyaan seputar KP, TA dan KKN</p>
+				<div class="form-group">
+					<span id="rec"><i id="jsone" class="fa fa-bullhorn" aria-hidden="false"></i></span>
+					<input type="text" id="input" class="form-control" placeholder="SILAHKAN MASUKAN PERTANYAAN">
+					<span id="main"><i class="fa fa-headphones"></i></span>
+					<div>
+						<div class="lds-dual-ring" style="display:none; margin: 0 auto;" id="loader"></div>
+					</div>
+					<textarea id="response" class="form-control" rows="5" disabled></textarea>
+				</div>
+			</div>
+		</div>	
+	</div>
+</body>
+</html>
