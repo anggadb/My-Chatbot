@@ -63,7 +63,7 @@ function kirim_data() {
         type: "POST",
         url: baseUrl + "query?v=20150910",
         contentType: "application/json; charset=utf-8",
-        dataType: "jsonp",
+        dataType: "json",
         headers: {
             "Authorization": "Bearer " + accessToken
         },
