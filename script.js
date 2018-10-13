@@ -67,7 +67,7 @@ function kirim_data() {
         headers: {
             "Authorization": "Bearer " + accessToken
         },
-        data: JSON.stringify({ query: text, lang: "id", sessionId: "somerandomthing" }),
+        data: JSON.stringify({ query: "text", lang: "id", sessionId: "somerandomthing" }),
         success: function(data) {
             $("#loader").css("display", "none");
             $("#response").show();  
